@@ -12,7 +12,7 @@ class HomePage(BasePage):
         self.search_button_xpath = (By.XPATH, "//button[@class='btn btn-default btn-lg']")
 
     def enter_product_into_search_box_field(self, product_name):
-        self.type_on_element(self.search_box_field_name, product_name)
+        self.send_keys_to_element(self.search_box_field_name, product_name)
 
     def click_on_search_button(self):
         self.click_on_element(self.search_button_xpath)
