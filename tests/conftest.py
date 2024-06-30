@@ -20,6 +20,7 @@ def setup_and_teardown(request):
     driver.maximize_window()
     base_url = ReadConfigurations.read_configuration("basic info", "url")
     driver.get(base_url)
+    driver.implicitly_wait(4)
     request.cls.driver = driver
     yield
     driver.quit()

@@ -1,21 +1,19 @@
 from selenium.webdriver.common.by import By
 
+from pages.BasePage import BasePage
 from pages.SearchPage import SearchPage
 
 
-class HomePage:
+class HomePage(BasePage):
 
     def __init__(self, driver):
-        self.driver = driver
-
-    search_box_field_name = "search"
-    search_button_xpath = "//button[@class='btn btn-default btn-lg']"
+        super().__init__(driver)
+        self.search_box_field_name = (By.NAME, "search")
+        self.search_button_xpath = (By.XPATH, "//button[@class='btn btn-default btn-lg']")
 
     def enter_product_into_search_box_field(self, product_name):
-        self.driver.find_element(By.NAME, self.search_box_field_name).click()
-        self.driver.find_element(By.NAME, self.search_box_field_name).clear()
-        self.driver.find_element(By.NAME, self.search_box_field_name).send_keys(product_name)
+        self.type_on_element(self.search_box_field_name, product_name)
 
     def click_on_search_button(self):
-        self.driver.find_element(By.XPATH, self.search_button_xpath).click()
+        self.click_on_element(self.search_button_xpath)
         return SearchPage(self.driver)

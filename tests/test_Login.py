@@ -1,18 +1,12 @@
 from datetime import datetime
 
-import pytest
 from selenium.webdriver.common.by import By
 
-from tests.BasePage import BasePage
-
-
-def generate_email_with_time_stamp():
-    timeStam = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
-    return "kinam" + timeStam + "gmail.com"
+from tests.BaseTest import BaseTest
 
 
 # @pytest.mark.usefixtures("setup_and_teardown")
-class TestLogin(BasePage):
+class TestLogin(BaseTest):
     driver = None
 
     def test_login_with_valid_credentials(self):
@@ -22,11 +16,13 @@ class TestLogin(BasePage):
         self.driver.find_element(By.NAME, "password").send_keys("123456")
         self.driver.find_element(By.CSS_SELECTOR, "input[value='Login']").click()
         assert self.driver.find_element(By.LINK_TEXT, "Edit your account information").is_displayed()
+        self.driver.find_element(By.XPATH, "//span[text()='My Account']").click()
+        self.driver.find_element(By.LINK_TEXT, "Logout").click()
 
     def test_login_with_invalid_email_and_valid_password(self):
         self.driver.find_element(By.XPATH, "//span[text()='My Account']").click()
         self.driver.find_element(By.LINK_TEXT,"Login").click()
-        self.driver.find_element(By.NAME, "email").send_keys(generate_email_with_time_stamp())
+        self.driver.find_element(By.NAME, "email").send_keys(self.generate_email_with_time_stamp())
         self.driver.find_element(By.NAME, "password").send_keys("123456")
         self.driver.find_element(By.CSS_SELECTOR, "input[value='Login']").click()
         expected_warning_message = "Warning: No match for E-Mail Address and/or Password."
@@ -53,7 +49,7 @@ class TestLogin(BasePage):
     def test_login_without_entering_password(self):
         self.driver.find_element(By.XPATH, "//span[text()='My Account']").click()
         self.driver.find_element(By.LINK_TEXT,"Login").click()
-        self.driver.find_element(By.NAME, "email").send_keys(generate_email_with_time_stamp())
+        self.driver.find_element(By.NAME, "email").send_keys(self.generate_email_with_time_stamp())
         self.driver.find_element(By.NAME, "password").send_keys("")
         self.driver.find_element(By.CSS_SELECTOR, "input[value='Login']").click()
         expected_warning_message = "Warning: No match for E-Mail Address and/or Password."

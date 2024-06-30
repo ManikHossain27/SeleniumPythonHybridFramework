@@ -1,28 +1,21 @@
 from datetime import datetime
 
-import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-from tests.BasePage import BasePage
-
-
-def generate_email_with_time_stamp():
-    time_stam = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
-    email = "kinam" + time_stam + "@gmail.com"
-    return email
+from tests.BaseTest import BaseTest
 
 
 # @pytest.mark.usefixtures("setup_and_teardown")
-class TestRegister(BasePage):
-    driver = webdriver.Chrome
+class TestRegister(BaseTest):
+    driver = None
 
     def test_register_with_mandatory_field(self):
         self.driver.find_element(By.XPATH, "//span[text()='My Account']").click()
         self.driver.find_element(By.LINK_TEXT, "Register").click()
         self.driver.find_element(By.NAME, "firstname").send_keys("Manik")
         self.driver.find_element(By.ID, "input-lastname").send_keys("Hossain")
-        self.driver.find_element(By.ID, "input-email").send_keys(generate_email_with_time_stamp())
+        self.driver.find_element(By.ID, "input-email").send_keys(self.generate_email_with_time_stamp())
         self.driver.find_element(By.ID, "input-telephone").send_keys("1234567890")
         self.driver.find_element(By.ID, "input-password").send_keys("123456")
         self.driver.find_element(By.ID, "input-confirm").send_keys("123456")
@@ -36,7 +29,7 @@ class TestRegister(BasePage):
         self.driver.find_element(By.LINK_TEXT, "Register").click()
         self.driver.find_element(By.NAME, "firstname").send_keys("Manik")
         self.driver.find_element(By.ID, "input-lastname").send_keys("Hossain")
-        self.driver.find_element(By.ID, "input-email").send_keys(generate_email_with_time_stamp())
+        self.driver.find_element(By.ID, "input-email").send_keys(self.generate_email_with_time_stamp())
         self.driver.find_element(By.ID, "input-telephone").send_keys("1234567890")
         self.driver.find_element(By.ID, "input-password").send_keys("123456")
         self.driver.find_element(By.ID, "input-confirm").send_keys("123456")
