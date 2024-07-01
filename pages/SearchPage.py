@@ -9,10 +9,10 @@ class SearchPage(BasePage):
         super().__init__(driver)
 
     valid_hp_product_link_text = (By.LINK_TEXT, "HP LP3065")
-    no_product_message_xpath = "//div[@id='content']/p[2]"
+    no_product_message_xpath = (By.XPATH, "//div[@id='content']/p[2]")
 
     def display_status_of_valid_product(self):
-        return self.display_status(self.valid_hp_product_link_text)
+        return self.is_element_displayed(self.valid_hp_product_link_text)
 
-    def retrive_no_product_message(self):
-        return self.driver.find_element(By.XPATH, self.no_product_message_xpath).text
+    def retrieve_no_product_message(self):
+        return  self.get_element_text(self.no_product_message_xpath)
