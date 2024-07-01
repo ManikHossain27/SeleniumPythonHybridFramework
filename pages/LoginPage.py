@@ -11,7 +11,7 @@ class LoginPage(BasePage):
         self.email_address_field_name = (By.NAME, "email")
         self.password_field_id = (By.NAME, "password")
         self.login_button_css_selector = (By.CSS_SELECTOR, "input[value='Login']")
-        self.warning_message_link_text = (By.LINK_TEXT, "Edit your account information")
+        self.warning_message_xpath = (By.XPATH, "//div[@id='account-login']/div[1]")
 
     def enter_email_address(self, email_address_text):
         self.send_keys_to_element(self.email_address_field_name, email_address_text)
@@ -29,6 +29,6 @@ class LoginPage(BasePage):
         return self.click_on_login_button()
 
     def retrieve_warning_message(self):
-        return self.get_element_text(self.warning_message_link_text)
+        return self.get_element_text(self.warning_message_xpath)
 
 
