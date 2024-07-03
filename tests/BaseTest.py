@@ -8,4 +8,4 @@ class BaseTest:
 
     def generate_email_with_time_stamp(self):
         time_stam = datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
-        return "kinam" + time_stam + "gmail.com"
+        return "kinam" + time_stam + "@gmail.com"
