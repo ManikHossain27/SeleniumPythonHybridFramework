@@ -1,19 +1,23 @@
 import time
 
+import pytest
 from selenium.webdriver.common.by import By
 
 from pages.HomePage import HomePage
 from tests.BaseTest import BaseTest
+from utilities import ExcelUtils
 
 
 class TestLogin(BaseTest):
     driver = None
 
-    def test_login_with_valid_credentials(self):
+    @pytest.mark.parametrize("email_address,password", ExcelUtils.get_data_from_excel("ExcelFiles/Data.xlsx", "LoginTest"))
+    def test_login_with_valid_credentials(self, email_address, password):
         homepage = HomePage(self.driver)
         login_page = homepage.navigate_to_login_page()
-        account_page = login_page.login_to_application("kinam@gmail.com", "123456")
-        assert account_page.display_status_of_edit_your_account_information_option()
+        # account_page = login_page.login_to_application("kinam@gmail.com", "123456")
+        account_page = login_page.login_to_application(email_address, password)
+        assert account_page.display_status_of_edit_your_account_information_option(), "Edit your account information is not displayes after successfull login"
         homepage.click_on_my_account_drop_menu()
         logout_page = account_page.select_logout_button()
         logout_page.account_logout_title_is_displayed()
