@@ -1,14 +1,32 @@
+import allure
 import pytest
+from allure_commons.types import AttachmentType
 from selenium import webdriver
 
 from utilities import ReadConfigurations
 
-driver = None
+
+# To take Screenshot only on Failure, write the below two methods (pytest_runtest_makereport, log_on_failure).
+@pytest.fixture()
+def log_on_failure(request):
+    yield
+    item = request.node
+    if item.rep_call.failed:
+        allure.attach(driver.get_screenshot_as_png(), name="failed_test",
+                      attachment_type=AttachmentType.PNG)
 
 
-@pytest.fixture(scope="class")
+@pytest.hookimpl(hookwrapper=True, tryfirst=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    rep = outcome.get_result()
+    setattr(item, "rep_" + rep.when, rep)
+    return rep
+
+
+@pytest.fixture()  # scope="class"
 def setup_and_teardown(request):
-    browser = "kinam" # ReadConfigurations.read_configuration("basic info", "browser")
+    browser = ReadConfigurations.read_configuration("basic info", "browser")
     global driver
     driver = webdriver.Chrome()
     if browser.lower().__eq__("chrome"):
@@ -21,25 +39,9 @@ def setup_and_teardown(request):
         print("Provide a valid browser name from this list chrom/firefox/edge")
 
     driver.maximize_window()
-    base_url = "https://tutorialsninja.com/demo/" # ReadConfigurations.read_configuration("basic info", "url")
+    base_url = ReadConfigurations.read_configuration("basic info", "url")
     driver.get(base_url)
     driver.implicitly_wait(4)
     request.cls.driver = driver
     yield
     driver.quit()
-
-
-'''
-    def pytest_addoption(parser):
-    parser.addoption(
-        "--browser_name", action="store", default="chrome"
-    )
-
-    @pytest.fixture(scope="class")
-        def setup(request):
-            global driver
-            browser_name=request.config.getoption("browser_name")
-            if browser_name == "chrome":
-                driver = webdriver.Chrome(executable_path="C:\\chromedriver.exe")
-            
-'''

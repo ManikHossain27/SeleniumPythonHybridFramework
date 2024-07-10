@@ -21,6 +21,7 @@ class TestRegister(BaseTest):
         home_page = HomePage(self.driver)
         register_page = home_page.navigate_to_register_page()
         account_success_page = register_page.register_an_account(
+            # first name and last name from specific cell in Excel
             ExcelUtils.get_cell_data("ExcelFiles/Data.xlsx","RegisterTest",2,1),
             ExcelUtils.get_cell_data("ExcelFiles/Data.xlsx","RegisterTest",2,2),
             self.generate_email_with_time_stamp(), "0153456789", "123456", "123456", "yes", "check")
