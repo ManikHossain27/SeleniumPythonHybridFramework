@@ -12,7 +12,8 @@ def log_on_failure(request):
     yield
     item = request.node
     if item.rep_call.failed:
-        allure.attach(driver.get_screenshot_as_png(), name="failed_test",
+        method_name = item.name  # get method name
+        allure.attach(driver.get_screenshot_as_png(), name=f"{method_name}_failed",
                       attachment_type=AttachmentType.PNG)
 
 
