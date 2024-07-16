@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert False\n +  where False = <method-wrapper '__eq__' of str object at 0x00000241FF66E490>('There is no product that matches the search criteria.ABC')\n +    where <method-wrapper '__eq__' of str object at 0x00000241FF66E490> = 'There is no product that matches the search criteria.'.__eq__\n +      where 'There is no product that matches the search criteria.' = <bound method SearchPage.retrieve_no_product_message of <pages.SearchPage.SearchPage object at 0x00000241FF3CB350>>()\n +        where <bound method SearchPage.retrieve_no_product_message of <pages.SearchPage.SearchPage object at 0x00000241FF3CB350>> = <pages.SearchPage.SearchPage object at 0x00000241FF3CB350>.retrieve_no_product_message",
+      "children" : [ {
+        "name" : "test_search_without_entering_any_product",
+        "uid" : "be3277f3fa6ddd10",
+        "parentUid" : "828496670c40c2361f0933c956fa95c5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1721132018895,
+          "stop" : 1721132019269,
+          "duration" : 374
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "828496670c40c2361f0933c956fa95c5"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

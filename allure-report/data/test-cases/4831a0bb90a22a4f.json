@@ -1,0 +1,201 @@
+{
+  "uid" : "4831a0bb90a22a4f",
+  "name" : "test_login_with_valid_credentials[amotoorisampleone@gmail.com-secondone]",
+  "fullName" : "tests.test_Login.TestLogin#test_login_with_valid_credentials",
+  "historyId" : "8eb8e19af2d572c2c9b87f6adf942a02",
+  "time" : {
+    "start" : 1721131847599,
+    "stop" : 1721131849545,
+    "duration" : 1946
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setup_and_teardown",
+    "time" : {
+      "start" : 1721131843314,
+      "stop" : 1721131847597,
+      "duration" : 4283
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "log_on_failure",
+    "time" : {
+      "start" : 1721131847597,
+      "stop" : 1721131847597,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "setup_and_teardown::0",
+    "time" : {
+      "start" : 1721131849551,
+      "stop" : 1721131851763,
+      "duration" : 2212
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "log_on_failure::0",
+    "time" : {
+      "start" : 1721131849550,
+      "stop" : 1721131849550,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_Login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-EQR9C0M"
+  }, {
+    "name" : "thread",
+    "value" : "2496-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "email_address",
+    "value" : "'amotoorisampleone@gmail.com'"
+  }, {
+    "name" : "password",
+    "value" : "'secondone'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "33ef117b43dd5a4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131645584,
+        "stop" : 1721131647263,
+        "duration" : 1679
+      }
+    }, {
+      "uid" : "f4fe8f83b701633b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044292095,
+        "stop" : 1721044294399,
+        "duration" : 2304
+      }
+    }, {
+      "uid" : "7432da0f2b299b93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721040392522,
+        "stop" : 1721040394413,
+        "duration" : 1891
+      }
+    }, {
+      "uid" : "7cb37ac8b1271c00",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721029498917,
+        "stop" : 1721029501016,
+        "duration" : 2099
+      }
+    }, {
+      "uid" : "6cb883becc1d5dba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720671723076,
+        "stop" : 1720671732051,
+        "duration" : 8975
+      }
+    }, {
+      "uid" : "601a5a18e883eed4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720671444351,
+        "stop" : 1720671451617,
+        "duration" : 7266
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "6781a55528bf4165",
+        "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/6781a55528bf4165",
+        "status" : "passed",
+        "time" : {
+          "start" : 1721131645584,
+          "stop" : 1721131647263,
+          "duration" : 1679
+        }
+      }, {
+        "uid" : "4bb9fa99ab9f1812",
+        "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/4bb9fa99ab9f1812",
+        "status" : "passed",
+        "time" : {
+          "start" : 1721044292095,
+          "stop" : 1721044294399,
+          "duration" : 2304
+        }
+      } ]
+    },
+    "tags" : [ "@pytest.mark.usefixtures('setup_and_teardown', 'log_on_failure')" ]
+  },
+  "source" : "4831a0bb90a22a4f.json",
+  "parameterValues" : [ "'amotoorisampleone@gmail.com'", "'secondone'" ]
+}

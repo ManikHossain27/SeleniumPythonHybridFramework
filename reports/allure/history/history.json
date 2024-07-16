@@ -1,0 +1,468 @@
+{
+  "97927bd37bb28ccdc4d171e87cfa7b86" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "bcef5eee97c7bbf",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/bcef5eee97c7bbf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131711702,
+        "stop" : 1721131712803,
+        "duration" : 1101
+      }
+    }, {
+      "uid" : "d3e036c5b343e35c",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/d3e036c5b343e35c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044371581,
+        "stop" : 1721044373381,
+        "duration" : 1800
+      }
+    } ]
+  },
+  "27609eb28fe6c04abd5cf5ce5223379a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "cc9e18c1223989b3",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/cc9e18c1223989b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131787033,
+        "stop" : 1721131787798,
+        "duration" : 765
+      }
+    }, {
+      "uid" : "5140d6aed80cb07b",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/5140d6aed80cb07b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044475544,
+        "stop" : 1721044476297,
+        "duration" : 753
+      }
+    } ]
+  },
+  "25af7bc671af10b2cde6ff6b6ff9cb7f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "22edac9301af7171",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/22edac9301af7171",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131752563,
+        "stop" : 1721131755827,
+        "duration" : 3264
+      }
+    }, {
+      "uid" : "2c148fb1a0a3d64b",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/2c148fb1a0a3d64b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044421058,
+        "stop" : 1721044425103,
+        "duration" : 4045
+      }
+    } ]
+  },
+  "8eb8e19af2d572c2c9b87f6adf942a02" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "6781a55528bf4165",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/6781a55528bf4165",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131645584,
+        "stop" : 1721131647263,
+        "duration" : 1679
+      }
+    }, {
+      "uid" : "4bb9fa99ab9f1812",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/4bb9fa99ab9f1812",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044292095,
+        "stop" : 1721044294399,
+        "duration" : 2304
+      }
+    } ]
+  },
+  "9d7c15636f7b48d3beb276131c85cb96" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "8ad0b84529018919",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/8ad0b84529018919",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131690611,
+        "stop" : 1721131691519,
+        "duration" : 908
+      }
+    }, {
+      "uid" : "4b2bfde99836443e",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/4b2bfde99836443e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044343852,
+        "stop" : 1721044345719,
+        "duration" : 1867
+      }
+    } ]
+  },
+  "ed707dfe9eb4fbf46fbd97b9c0df71da" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "c2977b3671e07788",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/c2977b3671e07788",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131778346,
+        "stop" : 1721131780963,
+        "duration" : 2617
+      }
+    }, {
+      "uid" : "e005aff31444e0f4",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/e005aff31444e0f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044464517,
+        "stop" : 1721044467142,
+        "duration" : 2625
+      }
+    } ]
+  },
+  "648c5a5ec41eece1c1f955baa091b933" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "74f4b966ed21a5fa",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/74f4b966ed21a5fa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131798086,
+        "stop" : 1721131798788,
+        "duration" : 702
+      }
+    }, {
+      "uid" : "96a50906a7286ed2",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/96a50906a7286ed2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044487224,
+        "stop" : 1721044488081,
+        "duration" : 857
+      }
+    } ]
+  },
+  "ba0f97908a41e08b28e88dbeba393400" : {
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "fe326a1d053c5598",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/fe326a1d053c5598",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <method-wrapper '__eq__' of str object at 0x000001BB955D2FD0>('There is no product that matches the search criteria.ABC')\n +    where <method-wrapper '__eq__' of str object at 0x000001BB955D2FD0> = 'There is no product that matches the search criteria.'.__eq__\n +      where 'There is no product that matches the search criteria.' = <bound method SearchPage.retrieve_no_product_message of <pages.SearchPage.SearchPage object at 0x000001BB94FE9AF0>>()\n +        where <bound method SearchPage.retrieve_no_product_message of <pages.SearchPage.SearchPage object at 0x000001BB94FE9AF0>> = <pages.SearchPage.SearchPage object at 0x000001BB94FE9AF0>.retrieve_no_product_message",
+      "time" : {
+        "start" : 1721131808565,
+        "stop" : 1721131809010,
+        "duration" : 445
+      }
+    }, {
+      "uid" : "828d387f102d3ed7",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/828d387f102d3ed7",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False\n +  where False = <method-wrapper '__eq__' of str object at 0x0000028157A3D0B0>('There is no product that matches the search criteria.ABC')\n +    where <method-wrapper '__eq__' of str object at 0x0000028157A3D0B0> = 'There is no product that matches the search criteria.'.__eq__\n +      where 'There is no product that matches the search criteria.' = <bound method SearchPage.retrieve_no_product_message of <pages.SearchPage.SearchPage object at 0x000002815768A570>>()\n +        where <bound method SearchPage.retrieve_no_product_message of <pages.SearchPage.SearchPage object at 0x000002815768A570>> = <pages.SearchPage.SearchPage object at 0x000002815768A570>.retrieve_no_product_message",
+      "time" : {
+        "start" : 1721044501979,
+        "stop" : 1721044502638,
+        "duration" : 659
+      }
+    } ]
+  },
+  "07dbeeaa054e15f41f51ac4b84f6a4f5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "7daf44de6fe6b59f",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/7daf44de6fe6b59f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131722174,
+        "stop" : 1721131723144,
+        "duration" : 970
+      }
+    }, {
+      "uid" : "5382a0a1f607d4b1",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/5382a0a1f607d4b1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044384513,
+        "stop" : 1721044386440,
+        "duration" : 1927
+      }
+    } ]
+  },
+  "1ac0210a1114473cae3abc5d53b10d88" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "bf5e4cfba56c4f4e",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/bf5e4cfba56c4f4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131766212,
+        "stop" : 1721131768176,
+        "duration" : 1964
+      }
+    }, {
+      "uid" : "5cc7274751e3f3d2",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/5cc7274751e3f3d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044450038,
+        "stop" : 1721044454225,
+        "duration" : 4187
+      }
+    } ]
+  },
+  "a147bfdee2ad00a7b64d255c3f53bf83" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "c1ef711489c42f68",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/c1ef711489c42f68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131732698,
+        "stop" : 1721131733778,
+        "duration" : 1080
+      }
+    }, {
+      "uid" : "77a4a423497ae707",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/77a4a423497ae707",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044396594,
+        "stop" : 1721044398184,
+        "duration" : 1590
+      }
+    } ]
+  },
+  "29f070520ee0dd470a5754e986d48718" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "7f75bc9972d37f3f",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/7f75bc9972d37f3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131679767,
+        "stop" : 1721131681251,
+        "duration" : 1484
+      }
+    }, {
+      "uid" : "3cffb29078771121",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/3cffb29078771121",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044330933,
+        "stop" : 1721044333073,
+        "duration" : 2140
+      }
+    } ]
+  },
+  "7508ebe97eab9fd4b92ee1d911866961" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "a6874416546d3e1c",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/a6874416546d3e1c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131739175,
+        "stop" : 1721131741962,
+        "duration" : 2787
+      }
+    }, {
+      "uid" : "7f164544e8fdda63",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/7f164544e8fdda63",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044404386,
+        "stop" : 1721044407709,
+        "duration" : 3323
+      }
+    } ]
+  },
+  "87b10abccaa31b27e8b01f9b7670addb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "f686a6fa41e18005",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/f686a6fa41e18005",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131656763,
+        "stop" : 1721131658490,
+        "duration" : 1727
+      }
+    }, {
+      "uid" : "118ec57ce02168db",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/118ec57ce02168db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044306285,
+        "stop" : 1721044308454,
+        "duration" : 2169
+      }
+    } ]
+  },
+  "c8f6d51212d4a3de30cbbd1495f83e04" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "7780f82bafc0a594",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/7780f82bafc0a594",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131668528,
+        "stop" : 1721131670183,
+        "duration" : 1655
+      }
+    }, {
+      "uid" : "15733bc2e9d40363",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/15733bc2e9d40363",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044317647,
+        "stop" : 1721044320324,
+        "duration" : 2677
+      }
+    } ]
+  },
+  "0f7f188bae322a777580df5f4c12caa1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "5d19b9275799baa1",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure/#testresult/5d19b9275799baa1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721131700914,
+        "stop" : 1721131701965,
+        "duration" : 1051
+      }
+    }, {
+      "uid" : "29b781353447e910",
+      "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure/#testresult/29b781353447e910",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721044356191,
+        "stop" : 1721044357849,
+        "duration" : 1658
+      }
+    } ]
+  }
+}

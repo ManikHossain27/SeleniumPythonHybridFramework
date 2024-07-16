@@ -1,0 +1,15 @@
+[ {
+  "buildOrder" : 3,
+  "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/3/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 163426
+  }
+}, {
+  "buildOrder" : 2,
+  "reportUrl" : "http://localhost:8080/job/SeleniumPythonHybridFramework/2/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 210543
+  }
+} ]

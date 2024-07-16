@@ -3,11 +3,11 @@ from tests.BaseTest import BaseTest
 
 
 class TestSearchProduct(BaseTest):
-    # driver = None
+    driver = None
 
     def test_search_for_a_valid_product(self):
         home_page = HomePage(self.driver)
-        search_page = home_page.search_a_product("HPP")
+        search_page = home_page.search_a_product("HP")
         assert search_page.display_status_of_valid_product()
 
     def test_search_for_a_invalid_product(self):

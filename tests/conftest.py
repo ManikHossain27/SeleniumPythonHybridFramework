@@ -2,19 +2,18 @@ import allure
 import pytest
 from allure_commons.types import AttachmentType
 from selenium import webdriver
-
 from utilities import ReadConfigurations
 
+# driver = None
 
-# To take Screenshot only on Failure, write the below two methods (pytest_runtest_makereport, log_on_failure).
+# To take a screenshot only on failure, write the following two methods (pytest_runtest_makereport, log_on_failure).
 @pytest.fixture()
 def log_on_failure(request):
     yield
     item = request.node
     if item.rep_call.failed:
-        method_name = item.name  # get method name
-        allure.attach(driver.get_screenshot_as_png(), name=f"{method_name}_failed",
-                      attachment_type=AttachmentType.PNG)
+        method_name = item.name  # Get the method name
+        allure.attach(driver.get_screenshot_as_png(), name=f"{method_name}_failed", attachment_type=AttachmentType.PNG)
 
 
 @pytest.hookimpl(hookwrapper=True, tryfirst=True)
@@ -25,19 +24,19 @@ def pytest_runtest_makereport(item, call):
     return rep
 
 
-@pytest.fixture()  # scope="class"
+@pytest.fixture()
 def setup_and_teardown(request):
     browser = ReadConfigurations.read_configuration("basic info", "browser")
     global driver
-    driver = webdriver.Chrome()
-    if browser.lower().__eq__("chrome"):
+
+    if browser.lower() == "chrome":
         driver = webdriver.Chrome()
-    elif browser.lower().__eq__("firefox"):
+    elif browser.lower() == "firefox":
         driver = webdriver.Firefox()
-    elif browser.lower().__eq__("edge"):
+    elif browser.lower() == "edge":
         driver = webdriver.Edge()
     else:
-        print("Provide a valid browser name from this list chrom/firefox/edge")
+        raise ValueError(f"Invalid browser name: {browser}. Supported browsers: chrome/firefox/edge")
 
     driver.maximize_window()
     base_url = ReadConfigurations.read_configuration("basic info", "url")
